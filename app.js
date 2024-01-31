@@ -6,7 +6,6 @@ let numeroSecreto = gerarNumeroAleatorio();
 function exibirTextoNaTela(tag, texto) {
     let campoIndex = document.querySelector(tag);
     campoIndex.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function gerarNumeroAleatorio() {
@@ -21,7 +20,6 @@ function gerarNumeroAleatorio() {
         return gerarNumeroAleatorio();
     }   else {
         listaNumerosGerados.push(numeroEscolhido);
-        console.log(listaNumerosGerados);
         return numeroEscolhido
     }
 }
